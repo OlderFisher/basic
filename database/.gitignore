@@ -1,0 +1,7 @@
+*.sqlite*
+idea/
+storage/
+public/storage/
+vendor/
+node_modules/
+database/database.sqlite
