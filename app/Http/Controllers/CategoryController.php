@@ -8,7 +8,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return "Category Index";
+        return view('blog.categories.index');
     }
     public function create()
     {

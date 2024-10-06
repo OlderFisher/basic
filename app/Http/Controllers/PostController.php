@@ -3,12 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request):View
     {
-        return "Post Index";
+        return view('blog.posts.index');
     }
     public function create()
     {

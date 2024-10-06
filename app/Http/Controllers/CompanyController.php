@@ -8,7 +8,7 @@ class CompanyController extends Controller
 {
     public function index()
     {
-        return "Company Index";
+        return view('companies.index');
     }
 
     public function edit($id)
