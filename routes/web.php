@@ -51,6 +51,7 @@ Route::middleware('auth')->name('category')->group(function () {
     Route::delete('/{id}/delete', [CategoryController::class, 'destroy'])->name('category.destroy');
 });
 
+// Posts
 Route::get('/posts', [PostController::class, 'index'])->middleware('auth')->name('posts');
 Route::middleware('auth')->name('post')->group(function () {
     Route::get('/create', [PostController::class, 'create'])->name('post.create');
