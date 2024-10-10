@@ -17,6 +17,12 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
             $table->string('phone')->nullable();
+            $table->string('country')->nullable();
+            $table->string('state')->nullable();
+            $table->string('city')->nullable();
+            $table->string('address')->nullable();
+            $table->string('zip')->nullable();
+            $table->string('avatar')->nullable();
             $table->uuid('company_id');
             $table->foreign('company_id')->references('id')->on('companies')->onDelete('cascade');
             $table->timestamps();

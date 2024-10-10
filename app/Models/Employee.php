@@ -11,6 +11,12 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $last_name
  * @property string $email
  * @property string $phone
+ * @property string $country
+ * @property string $state
+ * @property string $city
+ * @property string $address
+ * @property string $zip
+ * @property string $avatar
  * @property string $company_id
  */
 
@@ -25,6 +31,12 @@ class Employee extends Model
         'last_name',
         'email',
         'phone',
+        'country',
+        'state',
+        'city',
+        'address',
+        'zip',
+        'avatar',
         'company_id',
     ];
 }

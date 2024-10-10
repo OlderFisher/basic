@@ -20,6 +20,12 @@ class CompanyFactory extends Factory
         return [
             'name' => $this->faker->company,
             'email' => $this->faker->unique()->safeEmail,
+            'phone' => $this->faker->tollFreePhoneNumber(),
+            'state' => $this->faker->state,
+            'city' => $this->faker->city,
+            'address' => $this->faker->streetAddress(),
+            'zip' => $this->faker->postcode,
+            'logo' => '',
             'website' => $this->faker->url,
         ];
     }

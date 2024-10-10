@@ -18,6 +18,7 @@ class CategoryFactory extends Factory
     public function definition(): array
     {
         $name = $this->faker->sentence(rand(1,3));
+        $name = str_replace('.', '', $name);
         return [
             'name' => $name,
             'slug' => Str::slug($name),

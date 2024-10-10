@@ -22,7 +22,13 @@ class EmployeeFactory extends Factory
             'first_name' => $this->faker->firstName,
             'last_name' => $this->faker->lastName,
             'email' => $this->faker->unique()->safeEmail,
-            'phone' => $this->faker->phoneNumber,
+            'phone' => $this->faker->tollFreePhoneNumber(),
+            'country' => $this->faker->country,
+            'state' => $this->faker->state,
+            'city' => $this->faker->city,
+            'address' => $this->faker->streetAddress()   ,
+            'zip' => $this->faker->postcode,
+            'avatar' => '',
             'company_id' => $companiesIds[rand(0, count($companiesIds)-1)],
         ];
     }
